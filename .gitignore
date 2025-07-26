@@ -1,0 +1,12 @@
+# Ignorar la caché de Python
+__pycache__/
+
+# Ignorar carpetas de entornos virtuales
+.venv
+venv/
+env/
+
+# Ignorar carpetas de distribución de PyInstaller
+dist/
+build/
+*.spec
