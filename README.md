@@ -1,21 +1,19 @@
-# Suite de Automatización de Datos
-
 ## 📜 Resumen del Proyecto
 
-**Suite de Automatización de Datos** es una aplicación de escritorio desarrollada en Python con una interfaz gráfica construida con Tkinter. Esta herramienta fue creada para optimizar flujos de trabajo de oficina, automatizando tareas repetitivas de manipulación de archivos que normalmente consumen mucho tiempo y son propensas a errores humanos.
+**Suite de Automatización para Gestión Clínica** es una aplicación de escritorio desarrollada en Python y Tkinter, diseñada específicamente para optimizar los flujos de trabajo del **área administrativa de una clínica**. Esta herramienta centraliza y automatiza tareas de facturación, procesamiento de datos y gestión de archivos que son cruciales en el sector salud.
 
-La aplicación ofrece una interfaz centralizada, intuitiva y segura para que usuarios sin conocimientos técnicos puedan ejecutar procesos complejos con un solo clic.
+El objetivo es reducir drásticamente el tiempo invertido en procesos manuales y minimizar los errores humanos, permitiendo que el personal administrativo se enfoque en tareas de mayor valor.
 
 ## ✨ Características Principales
 
-Esta suite incluye cuatro módulos de automatización clave:
+Esta suite incluye cuatro módulos de automatización enfocados en necesidades del sector salud:
 
-| Módulo | Función Principal |
+| Módulo | Función Principal en el Contexto Clínico |
 | :--- | :--- |
-| **📄 Modificador de JSON** | Recorre recursivamente un directorio en busca de subcarpetas que sigan un patrón ('F...'). Dentro de ellas, localiza el primer archivo `.json` y estandariza el valor del campo `codTecnologiaSalud`, eliminando sufijos no deseados. |
-| **✏️ Renombrador de Archivos TXT** | Analiza subdirectorios para encontrar archivos `.txt` con nomenclaturas largas o generadas por sistemas (ej. `_F123_ID456.txt`) y los renombra a una versión limpia y corta (ej. `_F123.txt`), manteniendo la consistencia de los datos. |
-| **📊 Consolidador de Glosas en Excel** | Procesa archivos de Excel para unificar registros duplicados basados en el número de factura. Suma los valores de las glosas (`VALOR REAL GLOSA`) en una única fila por factura y reescribe el archivo original de forma segura, conservando las demás hojas. |
-| **⚙️ Procesador PGP en Excel** | Automatiza el procesamiento de archivos PGP. Asigna un número consecutivo por paciente, estandariza columnas, agrupa y cuenta los servicios prestados, y recalcula los valores totales, generando un nuevo archivo de Excel con los datos limpios y consolidados. |
+| **📄 Modificador de JSON** | Estandariza archivos de reporte (RIPS) en formato JSON, corrigiendo automáticamente el `codTecnologiaSalud` para asegurar la compatibilidad con sistemas de facturación y auditoría. |
+| **✏️ Renombrador de Archivos TXT** | Organiza lotes de archivos de facturación o reportes (ej. `_F123_ID456.txt`) renombrándolos a un formato corto y consistente (ej. `_F123.txt`) para facilitar su archivo y búsqueda. |
+| **📊 Consolidador de Glosas en Excel** | Procesa reportes de glosas en Excel, unificando múltiples objeciones de una misma factura. Suma el `VALOR REAL GLOSA` para obtener un total consolidado por factura, simplificando el proceso de conciliación. |
+| **⚙️ Procesador PGP en Excel** | Automatiza el análisis de archivos de Pago Global Prospectivo (PGP). Asigna consecutivos por paciente, cuenta los servicios (CUPS) prestados y recalcula los valores totales para auditorías y reportes financieros. |
 
 ## 🛠️ Tecnologías Utilizadas
 
